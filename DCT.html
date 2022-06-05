@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Gabriel Leite - Game/Content designer</title>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <link href='http://fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet' type='text/css'>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,300" rel="stylesheet" type="text/css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+
+    <div class="navbar">
+        <a href="/"><b>
+                <h3>Gabriel Leite - Game/Content Designer</h3>
+            </b></a>
+        <div>
+            <a>Resume</a>
+            <a href="index.html">Portfolio</a>
+        </div>
+    </div>
+
+    <div class="levant">
+        <h3>DCT - Dynamic Campaign Tools</h3>
+        <h4>Campaign framework for the simulator DCS world</h4>
+    </div>
+
+    <div class="About">
+        <div class="DCT">
+            <h3>DCT - Dynamic Campaign Tools</h3><br>
+            <p>
+                Framework forked and currently being developed to suit Flashpoint Levant needs as the scope grows,
+                adding features and optimizing, noteworthy additions are dynamic spawning system, entity persistence
+                as well
+                quality of life changes as the simplification of the mission sharing system.
+            </p><br>
+            <p>
+                <img src='./img/saw.gif' alt="levant" style="width:25%;height:25%;float:left;padding-right:1%;"
+                    href="DCT.html">
+            <p>As visible on the animation, enemy units spawn and despawn as the player moves closer or away
+                from them, the system was made with performance optimization in mind, as previously, the mission
+                had more than 1500
+                entities on the entire map, cutting it down to less than 400 at a time, as well granting a
+                significative performance improvement.</p><br>
+            <p>The system sets a range for every mission type, some can also vary from asset type inside a same
+                category, so every mission has a bubble around it, which the algorythim will check every 10
+                seconds if any player
+                is inside the area, and if the mission is active, if yes, the asset then will spawn, and in case
+                the player is leaving, a timer is present so the unit doesn't instantly despawn in case the
+                player is just preparing for another attack run,
+                preventing unnecessary load on the server and on clients.
+            </p><br>
+            <p>
+                Some assets like long range air defense systems are have checks based on their radar range, as
+                they are noticeable from a longer range trought sensors present on board of most aircraft, and
+                so, special care was given
+                for them. the algorythim checks all assets inside a SEAD(Anti Aerial defense missions) templates
+                to adquire the maximum ranges, and so its bubble is set to be the same size as it. Some other
+                missions, can also be
+                set to always spawn regardless of the mission not being active or no players being around it.
+            </p>
+            </p><br>
+            <p>
+                Other features include persistence between sessions, including damage to individual units inside a
+                mission, as well every destroyed object on the map, this way, player actions are lasting on the
+                battlefield trought the entire
+                campaign. Another changes are also improvements on how players can join a mission, as previously it
+                was deemed hard to approach, as players had to navigate trough multiple arcaic menus and interacting
+                with different systems
+                just to be able to join a mission, which now can be done all within the same interface players can
+                request a brand new mission, giving players a more approachable system.
+            </p>
+        </div>
+    </div>
+</body>
+
+</html>
